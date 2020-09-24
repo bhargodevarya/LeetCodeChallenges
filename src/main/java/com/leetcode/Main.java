@@ -1,4 +1,4 @@
-package com.bhargo;
+package com.leetcode;
 
 import com.leetcode.array.easy.*;
 
