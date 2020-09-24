@@ -1,4 +1,4 @@
-package com.bhargo.array.easy;
+package com.leetcode.array.easy;
 
 /**
  * https://leetcode.com/problems/non-decreasing-array/

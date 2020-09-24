@@ -1,11 +1,12 @@
-package com.bhargo.array.easy;
+package com.leetcode.array.easy;
 
 /**
- * https://leetcode.com/problems/squares-of-a-sorted-array
+ * https://leetcode.com/problems/squares-of-a-sorted-array/
  */
-public class SortedSquares {
+public class SqSorted {
 
-    public static int[] sortedSquares(int[] A) {
+    public int[] sortedSquares(int[] A) {
+
         int[] res = new int[A.length];
         int firstPosNumber = getPosLocation(A);
         if (firstPosNumber == 0) {
@@ -61,9 +62,10 @@ public class SortedSquares {
         }
 
         return res;
+
     }
 
-    private static int getPosLocation(int[] arr) {
+    private int getPosLocation(int[] arr) {
         for (int i =0; i < arr.length; i++) {
             if (arr[i] >= 0) {
                 return i;

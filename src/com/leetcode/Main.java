@@ -1,6 +1,6 @@
 package com.bhargo;
 
-import com.bhargo.array.easy.*;
+import com.leetcode.array.easy.*;
 
 public class Main {
 

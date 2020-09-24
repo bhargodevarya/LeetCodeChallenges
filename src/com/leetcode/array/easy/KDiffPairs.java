@@ -1,4 +1,4 @@
-package com.bhargo.array.easy;
+package com.leetcode.array.easy;
 
 import java.util.Arrays;
 import java.util.HashSet;
