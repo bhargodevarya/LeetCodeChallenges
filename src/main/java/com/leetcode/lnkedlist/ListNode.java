@@ -3,7 +3,7 @@ package com.leetcode.lnkedlist;
 public class ListNode {
 
     int val;
-    ListNode next;
+    public ListNode next;
 
     ListNode() {
     }
