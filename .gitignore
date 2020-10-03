@@ -2,3 +2,8 @@
 /build/
 /.idea/
 /.gradle/
+.classpath
+.project
+.settings/
+.vscode/
+bin/
