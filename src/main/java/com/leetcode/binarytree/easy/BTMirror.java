@@ -3,11 +3,11 @@ package com.leetcode.binarytree.easy;
 import com.leetcode.binarytree.BinaryTree;
 
 /**
- * https://leetcode.com/problems/same-tree/
+ * Same as the problem of identical BTs, only the nodes passed are opposite.
  */
-public class BTIdentical {
+public class BTMirror {
 
-    public static boolean isSameTree(BinaryTree<Integer> p, BinaryTree<Integer> q) {
+    public static boolean isMirrorTree(BinaryTree<Integer> p, BinaryTree<Integer> q) {
         if (p == null && q == null) {
             return true;
         }
@@ -17,6 +17,6 @@ public class BTIdentical {
         if (p != null && q == null) {
             return false;
         }
-        return p.value.equals(q.value) && isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
+        return p.value.equals(q.value) && isMirrorTree(p.right, q.left) && isMirrorTree(p.left, q.right);
     }
 }
