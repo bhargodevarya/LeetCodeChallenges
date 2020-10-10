@@ -1,13 +1,13 @@
 package com.leetcode.binarytree.easy;
 
-import com.leetcode.binarytree.BinaryTree;
+import com.leetcode.binarytree.TreeNode;
 
 /**
  * Same as the problem of identical BTs, only the nodes passed are opposite.
  */
 public class BTMirror {
 
-    public static boolean isMirrorTree(BinaryTree<Integer> p, BinaryTree<Integer> q) {
+    public static boolean isMirrorTree(TreeNode<Integer> p, TreeNode<Integer> q) {
         if (p == null && q == null) {
             return true;
         }
@@ -17,6 +17,6 @@ public class BTMirror {
         if (p != null && q == null) {
             return false;
         }
-        return p.value.equals(q.value) && isMirrorTree(p.right, q.left) && isMirrorTree(p.left, q.right);
+        return p.val.equals(q.val) && isMirrorTree(p.right, q.left) && isMirrorTree(p.left, q.right);
     }
 }

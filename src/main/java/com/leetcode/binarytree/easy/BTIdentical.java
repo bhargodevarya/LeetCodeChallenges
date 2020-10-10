@@ -1,13 +1,13 @@
 package com.leetcode.binarytree.easy;
 
-import com.leetcode.binarytree.BinaryTree;
+import com.leetcode.binarytree.TreeNode;
 
 /**
  * https://leetcode.com/problems/same-tree/
  */
 public class BTIdentical {
 
-    public static boolean isSameTree(BinaryTree<Integer> p, BinaryTree<Integer> q) {
+    public static boolean isSameTree(TreeNode<Integer> p, TreeNode<Integer> q) {
         if (p == null && q == null) {
             return true;
         }
@@ -17,6 +17,6 @@ public class BTIdentical {
         if (p != null && q == null) {
             return false;
         }
-        return p.value.equals(q.value) && isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
+        return p.val.equals(q.val) && isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
     }
 }

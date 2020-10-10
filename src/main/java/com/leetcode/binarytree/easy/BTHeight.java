@@ -1,16 +1,16 @@
 package com.leetcode.binarytree.easy;
 
-import com.leetcode.binarytree.BinaryTree;
+import com.leetcode.binarytree.TreeNode;
 
 /**
  * https://leetcode.com/problems/maximum-depth-of-binary-tree/
  */
 public class BTHeight {
 
-    public static int solve(BinaryTree<Integer> binaryTree) {
-        if (binaryTree == null) {
+    public static int solve(TreeNode<Integer> treeNode) {
+        if (treeNode == null) {
             return 0;
         }
-        return Math.max(solve(binaryTree.left), solve(binaryTree.right)) +1;
+        return Math.max(solve(treeNode.left), solve(treeNode.right)) +1;
     }
 }
