@@ -1,6 +1,7 @@
 package com.leetcode.binarytree;
 
 import com.leetcode.binarytree.easy.BTHeight;
+import com.leetcode.binarytree.easy.BTIdentical;
 
 public class BinaryTreeMain {
 
@@ -12,6 +13,10 @@ public class BinaryTreeMain {
         BinaryTree<Integer> b4left = new BinaryTree<>(1);
         bt.left = b2left; bt.right = b2right;
         b2left.left = b3left;b3left.left = b4left;
-        System.out.println(BTHeight.solve(bt));
+
+        BinaryTree<Integer> bt2 = new BinaryTree<>(7);
+        bt.left = b2left; bt.right = b2right;
+        b2left.left = b3left;b3left.left = b4left;b2left.right=new BinaryTree(8);
+        System.out.println(BTIdentical.isSameTree(bt, bt2));
     }
 }
