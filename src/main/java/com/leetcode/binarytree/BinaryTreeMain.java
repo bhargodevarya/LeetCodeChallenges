@@ -2,11 +2,12 @@ package com.leetcode.binarytree;
 
 import com.leetcode.binarytree.easy.BTInvert;
 import com.leetcode.binarytree.easy.BTMirror;
+import com.leetcode.binarytree.medium.SumEvenGrandparent;
 
 public class BinaryTreeMain {
 
     public static void main(String[] args) {
-        TreeNode<Integer> bt = new TreeNode<>(7);
+        /*TreeNode<Integer> bt = new TreeNode<>(7);
         TreeNode<Integer> b2left = new TreeNode<>(4);
         TreeNode<Integer> b2right = new TreeNode<>(5);
         TreeNode<Integer> b3left = new TreeNode<>(9);
@@ -23,6 +24,31 @@ public class BinaryTreeMain {
 
         bt2.right = bt2left; bt2.left = bt2right;
         bt2left.right = bt3left;bt3left.right = bt4left;
-        System.out.println(BTMirror.isMirrorTree(bt, bt2));
+        System.out.println(BTMirror.isMirrorTree(bt, bt2));*/
+
+        TreeNode<Integer> b6 = new TreeNode<>(6);
+        TreeNode<Integer> b7 = new TreeNode<>(7);
+        TreeNode<Integer> b8 = new TreeNode<>(8);
+        TreeNode<Integer> b2 = new TreeNode<>(2);
+        TreeNode<Integer> b77 = new TreeNode<>(7);
+        TreeNode<Integer> b1 = new TreeNode<>(1);
+        TreeNode<Integer> b3 = new TreeNode<>(3);
+        TreeNode<Integer> b9 = new TreeNode<>(9);
+        TreeNode<Integer> b11 = new TreeNode<>(1);
+        TreeNode<Integer> b4 = new TreeNode<>(4);
+        TreeNode<Integer> b5 = new TreeNode<>(5);
+
+        b2.left = b9;
+        b77.left=b11;
+        b77.right = b4;
+        b3.right=b5;
+        b7.left=b2;b7.right=b77;
+        b8.left=b1;b8.right=b3;
+        b6.left=b7;b6.right=b8;
+
+        System.out.println(SumEvenGrandparent.sumEvenGrandparent(b6));
+
+
+
     }
 }
